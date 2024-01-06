@@ -1,0 +1,40 @@
+{
+    "controller.TDA.Listas.LinkedList": {
+        "head": {
+            "data": {
+                "@class": "model.Marca",
+                "id": 1,
+                "nombre": "Ferrari",
+                "estado": true
+            },
+            "next": {
+                "data": {
+                    "@class": "model.Marca",
+                    "id": 2,
+                    "nombre": "Bentley",
+                    "estado": true
+                },
+                "next": {
+                    "data": {
+                        "@class": "model.Marca",
+                        "id": 3,
+                        "nombre": "Lamborghini",
+                        "estado": true
+                    },
+                    "next": {
+                        "data": {
+                            "@class": "model.Marca",
+                            "id": 4,
+                            "nombre": "Lexus",
+                            "estado": true
+                        }
+                    }
+                }
+            }
+        },
+        "last": {
+            "@reference": "..\/head\/next\/next\/next"
+        },
+        "size": 4
+    }
+}
